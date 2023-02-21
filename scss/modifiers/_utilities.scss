@@ -1,0 +1,21 @@
+/**=======================================================================================================================
+ **                                                   UTILITIES 
+ *=======================================================================================================================**/
+
+.u--display--mobile {
+  display: none;
+  @include respond(break-600) {
+    display: block;
+  }
+}
+.u--display--desktop {
+  display: block;
+  @include respond(break-600) {
+    display: none;
+  }
+}
+.u--width-max--mobile {
+  @include respond(break-600) {
+    width: 100%;
+  }
+}

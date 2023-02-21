@@ -1,0 +1,37 @@
+/**========================================================================
+ **                           MEDIA BREAKPOINTS
+ *========================================================================**/
+/*
+*Breakpoints:
+- Mobile 600px
+- Tablet Portrait 900px
+- Tablet Landscape 1200px
+- Televisions/Projectors >1800px 
+*/
+
+@mixin respond($breakpoint) {
+  // Mobile - 600px @include respond(break-600) {}
+  @if $breakpoint == break-600 {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  // Tablet Portrait - 900 @include respond(break- 900) {}
+  @if $breakpoint == break-900 {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  // Tablet Landscape - 1200 @include respond(break-1200) {}
+  @if $breakpoint == break-1200 {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  // Telvision/Projector > 1800 @include respond(break-1800) {}
+  @if $breakpoint == break-1800 {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
