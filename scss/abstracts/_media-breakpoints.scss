@@ -5,7 +5,7 @@
 *Breakpoints:
 - Mobile 600px
 - Tablet Portrait 900px
-- Tablet Landscape 1200px
+- Laptop 1500px
 - Televisions/Projectors >1800px 
 */
 
@@ -22,9 +22,9 @@
       @content;
     }
   }
-  // Tablet Landscape - 1200 @include respond(break-1200) {}
-  @if $breakpoint == break-1200 {
-    @media (max-width: 75em) {
+  // Tablet Landscape - 1550 @include respond(break-1550) {}
+  @if $breakpoint == break-1550 {
+    @media (max-width: 96.875em) {
       @content;
     }
   }

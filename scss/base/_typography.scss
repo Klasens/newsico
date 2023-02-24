@@ -10,12 +10,18 @@
 .head {
   &--main {
     font-size: 2.2rem;
+    @include respond(break-1550) {
+      font-size: 1.8rem;
+    }
   }
   &--ext {
     font-size: 1.6rem;
+    @include respond(break-1550) {
+      font-size: 1.2rem;
+    }
   }
   &--small {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   &--category {
     font-weight: bold;
@@ -35,8 +41,14 @@
 
 .text--description {
   font-size: 1.4rem;
+  @include respond(break-1550) {
+    font-size: 1.1rem;
+  }
   &--ext {
     font-size: 1.2rem;
+    @include respond(break-1550) {
+      font-size: 1rem;
+    }
   }
 }
 .text--author {
@@ -44,6 +56,9 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    @include respond(break-1550) {
+      font-size: 1rem;
+    }
   }
   &--small {
     font-size: 0.8rem;
@@ -54,6 +69,9 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+    @include respond(break-1550) {
+      font-size: 0.8rem;
+    }
   }
 }
 

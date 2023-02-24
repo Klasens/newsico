@@ -6,16 +6,12 @@
   display: grid;
 
   &--main {
-    background-color: $color-white;
-    height: 40rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     @include respond(break-600) {
     }
   }
   &--api {
-    background-color: $color-white;
-    height: 40rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     @include respond(break-600) {
