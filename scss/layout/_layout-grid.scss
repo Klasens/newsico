@@ -1,0 +1,49 @@
+/**=======================================================================================================================
+ **                                                   MAIN GRID 
+ *=======================================================================================================================**/
+
+.layout-grid {
+  &--main {
+    // Borders
+    border-bottom: 1px solid $color-black-opaque;
+    & > .small-article {
+      // Borders
+      border-right: 1px solid $color-black-opaque;
+    }
+    & > .api-article {
+      // Borders
+      border-left: 1px solid $color-black-opaque;
+    }
+  }
+  &--api {
+    & > * {
+      border-bottom: 1px solid $color-black-opaque;
+    }
+  }
+}
+#newsico-1 {
+  border-bottom: 1px solid $color-black-opaque;
+}
+#newsico-2 {
+  border-bottom: 1px solid $color-black-opaque;
+}
+#api-1 {
+  border-bottom: 1px solid $color-black-opaque;
+}
+
+#api-3 {
+  border-right: 1px solid $color-black-opaque;
+}
+#api-4 {
+  border-right: 1px solid $color-black-opaque;
+}
+
+#api-6 {
+  border-left: 1px solid $color-black-opaque;
+}
+#api-8 {
+  border-left: 1px solid $color-black-opaque;
+}
+#api-ext {
+  border-right: 1px solid $color-black-opaque;
+}

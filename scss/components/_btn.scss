@@ -6,9 +6,12 @@
   padding: 0.5rem 1rem;
   border-radius: 10px;
   cursor: pointer;
-  border: 1px solid $color-black;
+  border: 1px solid $color-black-opaque;
   &--white {
     background-color: $color-white;
+  }
+  &--green {
+    background-color: $color-primary;
   }
   &--transparent {
     background-color: transparent;

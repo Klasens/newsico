@@ -1,0 +1,47 @@
+/**========================================================================
+ **                          FOOTER 
+ *========================================================================**/
+
+.footer {
+  position: relative;
+  height: 15rem;
+  background-color: $color-black;
+  &__inner {
+    height: 15rem;
+    border-left: 1px solid $color-white;
+    border-right: 1px solid $color-white;
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__left {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid $color-white;
+  }
+  &__block {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    & > * {
+      margin-top: 0.5rem;
+    }
+  }
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  &__copyright {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+}

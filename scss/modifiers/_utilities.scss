@@ -2,6 +2,20 @@
  **                                                   UTILITIES 
  *=======================================================================================================================**/
 
+// Used for category header on main grid
+.u--position-absolute--top-center {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Used for category header on main grid
+.u--width--max-content {
+  width: max-content;
+}
+
+// Not Used
 .u--display--mobile {
   display: none;
   @include respond(break-600) {

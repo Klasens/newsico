@@ -17,11 +17,10 @@ gulp.task('nunjucks-index', function () {
     gulp
       // -- Collect Index
       .src('pages/index.html')
-      // -- Compile partials fromcards
+      // -- Compile partials from partials
       .pipe(
         nunjucksRender({
-          //todo WHAT SHOULD THIS POINT TO
-          path: ['cards'],
+          path: ['partials'],
         })
       )
       // -- Output files to chapters folder

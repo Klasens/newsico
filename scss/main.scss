@@ -19,13 +19,16 @@
 @import 'components/form';
 
 // --- LAYOUT --- //
-@import 'layout/display';
+@import 'layout/base-display';
+@import 'layout/base-layout';
 @import 'layout/grid';
+@import 'layout/layout-grid';
 @import 'layout/main-article';
 @import 'layout/api-article';
-@import 'layout/alt-article';
-@import 'layout/sub-article';
+@import 'layout/small-article';
+@import 'layout/sub-articles';
 @import 'layout/top-nav';
+@import 'layout/footer';
 
 // --- PAGES --- //
 @import 'pages/construction';

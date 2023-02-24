@@ -6,10 +6,75 @@
   display: grid;
 
   &--main {
+    background-color: $color-white;
+    height: 40rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    @include respond(break-600) {
+    }
+  }
+  &--api {
+    background-color: $color-white;
+    height: 40rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     @include respond(break-600) {
     }
   }
 }
 
 #gridMain {
+  grid-template-areas:
+    'newsico1 main main api1'
+    'newsico1 main main api1'
+    'newsico2 main main api1'
+    'newsico2 main main api2'
+    'newsico3 main main api2'
+    'newsico3 main main api2';
+}
+#newsico-main {
+  grid-area: main;
+}
+#newsico-1 {
+  grid-area: newsico1;
+}
+#newsico-2 {
+  grid-area: newsico2;
+}
+#newsico-3 {
+  grid-area: newsico3;
+}
+#api-1 {
+  grid-area: api1;
+}
+#api-2 {
+  grid-area: api2;
+}
+
+#gridApi {
+  grid-template-areas:
+    'api3 api4 api5 api6'
+    'apiX apiX api7 api8';
+}
+
+#api-ext {
+  grid-area: apiX;
+}
+#api-3 {
+  grid-area: api3;
+}
+#api-4 {
+  grid-area: api4;
+}
+#api-5 {
+  grid-area: api5;
+}
+#api-6 {
+  grid-area: api6;
+}
+#api-7 {
+  grid-area: api7;
+}
+#api-8 {
+  grid-area: api8;
 }

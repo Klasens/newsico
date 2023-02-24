@@ -1,0 +1,29 @@
+/**=======================================================================================================================
+ **                                                   SMALL ARTICLE 
+ *=======================================================================================================================**/
+
+.small-article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+
+  &__header {
+    margin-bottom: 1rem;
+  }
+  &__image-container {
+    position: relative;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  &__image-line {
+    position: absolute;
+    bottom: 11px;
+    right: 10px;
+    border-radius: 2px;
+    height: 15px;
+    width: 4rem;
+    background-color: $color-primary;
+  }
+}

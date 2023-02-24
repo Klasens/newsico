@@ -2,12 +2,15 @@
  **                          DISPLAY 
  *========================================================================**/
 
-.body {
-  background-color: $color-secondary;
+.display-base {
+  background-color: $color-white;
+  @include respond(break-600) {
+    width: auto;
+  }
 }
-
 .display-main {
   width: 80rem;
+  background-color: $color-white;
   @include respond(break-600) {
     width: auto;
   }
