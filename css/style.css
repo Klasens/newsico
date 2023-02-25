@@ -324,7 +324,7 @@ a {
   grid-template-areas: 'newsico1 main main api1' 'newsico1 main main api1' 'newsico2 main main api1' 'newsico2 main main api2' 'newsico3 main main api2' 'newsico3 main main api2'; }
   @media (max-width: 37.5em) {
     #gridMain {
-      grid-template-areas: 'main' 'main' 'head' 'newsico1' 'newsico2' 'newsico3' 'api1' 'api2'; } }
+      grid-template-areas: 'main' 'main' 'head' 'newsico1' 'newsico2' 'newsico3' 'techHead' 'api1' 'api2'; } }
 
 #newsico-main {
   grid-area: main; }
@@ -352,6 +352,9 @@ a {
   @media (max-width: 37.5em) {
     #gridApi {
       grid-template-areas: 'api3' 'api4' 'apiX' 'apiX' 'api5' 'api6' 'api7' 'api8'; } }
+
+#tech-head {
+  grid-area: techHead; }
 
 #api-ext {
   grid-area: apiX; }
@@ -422,7 +425,8 @@ a {
   padding: 0 2rem; }
   @media (max-width: 37.5em) {
     .main-article {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.15); } }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 0 0.5rem; } }
   .main-article__image-container {
     position: relative;
     width: 100%;
@@ -554,6 +558,12 @@ a {
     bottom: -2.5rem;
     left: 50%;
     transform: translateX(-50%); }
+  @media (max-width: 37.5em) {
+    .top-nav__menu {
+      width: 4rem; } }
+  @media (max-width: 37.5em) {
+    .top-nav__search {
+      width: 4rem; } }
 
 /**========================================================================
  **                          FOOTER 
@@ -614,7 +624,7 @@ a {
         justify-content: start;
         margin-top: 4rem;
         margin-left: 2rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 3rem; } }
   .footer__copyright {
     position: absolute;
     bottom: 0.5rem;

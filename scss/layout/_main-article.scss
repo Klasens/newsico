@@ -10,6 +10,7 @@
   padding: 0 2rem;
   @include respond(break-600) {
     border-bottom: 1px solid $color-black-opaque;
+    padding: 0 0.5rem;
   }
 
   &__image-container {

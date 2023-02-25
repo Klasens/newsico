@@ -46,4 +46,15 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  &__menu {
+    @include respond(break-600) {
+      width: 4rem;
+    }
+  }
+  &__search {
+    @include respond(break-600) {
+      width: 4rem;
+    }
+  }
 }
