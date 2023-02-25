@@ -70,7 +70,8 @@ a {
  *=======================================================================================================================**/
 .main-font {
   font-family: 'Roboto', Arial, sans-serif;
-  color: black; }
+  color: black;
+  line-height: 1.5; }
 
 .head--main {
   font-size: 2.2rem; }
@@ -112,12 +113,12 @@ a {
         font-size: 1rem; } }
 
 .text--author--main {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase; }
   @media (max-width: 96.875em) {
     .text--author--main {
-      font-size: 1rem; } }
+      font-size: 0.8rem; } }
 
 .text--author--small {
   font-size: 0.8rem;
@@ -125,7 +126,7 @@ a {
   text-transform: uppercase; }
 
 .text--author--ext {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase; }
   @media (max-width: 96.875em) {
@@ -141,14 +142,32 @@ a {
 .text--center {
   text-align: center; }
 
-/**=======================================================================================================================
- **                                                   IMG 
- *=======================================================================================================================**/
+/**======================================================================================================================= **                                                   IMG *=======================================================================================================================**/
 .icon--menu {
   width: 2rem; }
 
 .icon--footer {
   width: 2rem; }
+
+.image--small {
+  height: 5rem;
+  width: 10rem;
+  object-fit: cover; }
+
+.image--main {
+  height: 20rem;
+  object-fit: cover;
+  width: 100%; }
+
+.image--api {
+  height: 10rem;
+  object-fit: cover;
+  width: 100%; }
+
+.image--ext {
+  height: 15rem;
+  object-fit: cover;
+  width: 100%; }
 
 .logo--main {
   width: 12rem; }
@@ -380,7 +399,7 @@ a {
     border-radius: 5px; }
   .main-article__image-line {
     position: absolute;
-    bottom: 11px;
+    bottom: 13px;
     right: 1rem;
     border-radius: 2px;
     height: 20px;
@@ -426,17 +445,16 @@ a {
     margin-bottom: 1rem; }
   .small-article__image-container {
     position: relative;
-    width: 100%;
     margin-left: 1rem; }
   .small-article__content-container {
     width: 100%; }
   .small-article__image-line {
     position: absolute;
-    bottom: 11px;
-    right: 10px;
+    bottom: 1.5rem;
+    right: -5px;
     border-radius: 2px;
-    height: 15px;
-    width: 4rem;
+    height: 4rem;
+    width: 0.8rem;
     background-color: #1abc9c; }
 
 /**=======================================================================================================================
