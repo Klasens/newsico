@@ -6,6 +6,9 @@
   position: relative;
   height: 15rem;
   background-color: $color-black;
+  @include respond(break-600) {
+    height: auto;
+  }
   &__inner {
     height: 15rem;
     border-left: 1px solid $color-white;
@@ -19,12 +22,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include respond(break-600) {
+      flex-direction: column;
+      height: auto;
+      width: auto;
+      border-left: none;
+      border-right: none;
+      position: static;
+      transform: none;
+    }
   }
   &__left {
     width: 50%;
     display: flex;
     justify-content: space-around;
     border-right: 1px solid $color-white;
+    @include respond(break-600) {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid $color-white;
+      padding-bottom: 1rem;
+    }
   }
   &__block {
     margin-top: 0.5rem;
@@ -38,6 +56,13 @@
     width: 50%;
     display: flex;
     justify-content: center;
+    @include respond(break-600) {
+      width: 100%;
+      justify-content: start;
+      margin-top: 4rem;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
   }
   &__copyright {
     position: absolute;

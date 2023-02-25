@@ -15,6 +15,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(break-600) {
+      width: auto;
+    }
   }
   &__left {
     display: flex;

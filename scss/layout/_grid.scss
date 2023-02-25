@@ -9,12 +9,16 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     @include respond(break-600) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
     }
   }
   &--api {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     @include respond(break-600) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
     }
   }
 }
@@ -27,9 +31,24 @@
     'newsico2 main main api2'
     'newsico3 main main api2'
     'newsico3 main main api2';
+
+  @include respond(break-600) {
+    grid-template-areas:
+      'main'
+      'main'
+      'head'
+      'newsico1'
+      'newsico2'
+      'newsico3'
+      'api1'
+      'api2';
+  }
 }
 #newsico-main {
   grid-area: main;
+}
+#newsico-head {
+  grid-area: head;
 }
 #newsico-1 {
   grid-area: newsico1;
@@ -51,6 +70,17 @@
   grid-template-areas:
     'api3 api4 api5 api6'
     'apiX apiX api7 api8';
+  @include respond(break-600) {
+    grid-template-areas:
+      'api3'
+      'api4'
+      'apiX'
+      'apiX'
+      'api5'
+      'api6'
+      'api7'
+      'api8';
+  }
 }
 
 #api-ext {

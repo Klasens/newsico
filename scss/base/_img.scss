@@ -12,6 +12,10 @@
     height: 5rem;
     width: 10rem;
     object-fit: cover;
+    @include respond(break-600) {
+      height: 15rem;
+      width: 100%;
+    }
   }
   &--main {
     height: 20rem;
@@ -22,6 +26,9 @@
     height: 10rem;
     object-fit: cover;
     width: 100%;
+    @include respond(break-600) {
+      height: 15rem;
+    }
   }
   &--ext {
     height: 15rem;
