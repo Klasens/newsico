@@ -537,7 +537,7 @@ a {
     transform: translate(-50%, -50%); }
     @media (max-width: 37.5em) {
       .top-nav__inner {
-        width: auto;
+        width: 90%;
         position: static;
         transform: none; } }
   .top-nav__left {
@@ -546,7 +546,7 @@ a {
     margin-left: 2rem; }
     @media (max-width: 37.5em) {
       .top-nav__left {
-        margin-left: 0.5rem; } }
+        margin-left: 0rem; } }
     .top-nav__left > * {
       margin: 0 1rem; }
       @media (max-width: 37.5em) {
