@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Newsico -- Article 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== FONT AWESOME ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <!--====== GOOGLE FONTS ======-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- BASE FONTS ======-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <!--====== STYLE SHEETS ======-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--====== SMARTLOOK ANALYTICS ======-->
+  </head>
+
+  <!-------------------------------- HTML ------------------------------>
+
+  <body class="layout-base display-base body main-font text--black">
+    <!-- Block Content -->
+    {% block content %}
+    <!-- TOP NAV -->
+    {% include "top-nav.html" %}
+    <!-- FOOTER -->
+    {% include "footer.html" %}
+    <!-- Endblock -->
+    {% endblock %}
+    <!------- JAVASCRIPT ------->
+    <script src="/index.js"></script>
+  </body>
+</html>

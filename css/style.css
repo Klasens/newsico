@@ -462,7 +462,7 @@ a {
   .api-extended__left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     width: 50%; }
     @media (max-width: 37.5em) {
       .api-extended__left {
@@ -515,6 +515,9 @@ a {
     height: 4rem;
     width: 0.8rem;
     background-color: #1abc9c; }
+
+#newsico-3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 /**=======================================================================================================================
  **                                                  SUB ARTICLE 
