@@ -15,6 +15,7 @@ $color-secondary: rgb(42, 78, 110); // #2a4e6e Aqua
 
 $color-white: rgb(247, 247, 247);
 $color-black: rgb(0, 0, 0);
+$color-grey: rgb(90, 90, 90);
 $color-orange: rgb(255, 145, 0);
 
 /**======================
@@ -27,7 +28,7 @@ $color-black-opaque: rgba(0, 0, 0, 0.15);
    *     Modals 
    *========================**/
 
-$color-modal-overlay: rgb(52, 52, 52);
+$color-modal-overlay: rgba(52, 52, 52, 0.35);
 
 /**======================
    *     Page Specific 

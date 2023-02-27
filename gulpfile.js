@@ -27,6 +27,22 @@ gulp.task('nunjucks-index', function () {
       .pipe(gulp.dest('./'))
   );
 });
+// ==== Build Subscribe ==== //
+gulp.task('nunjucks-subscribe', function () {
+  return (
+    gulp
+      // -- Collect Index
+      .src('pages/subscribe.html')
+      // -- Compile partials from partials
+      .pipe(
+        nunjucksRender({
+          path: ['partials'],
+        })
+      )
+      // -- Output files to chapters folder
+      .pipe(gulp.dest('./'))
+  );
+});
 // ==== Build Articles ==== //
 gulp.task('nunjucks-articles', function () {
   return (

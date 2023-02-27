@@ -62,6 +62,7 @@
   }
 
   &__menu {
+    cursor: pointer;
     @include respond(break-600) {
       width: 4rem;
     }

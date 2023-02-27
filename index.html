@@ -41,27 +41,64 @@
 
   <body class="layout-base display-base body main-font text--black">
     <!-- Block Content -->
-    
+     <div id="sideMenu" class="side-nav">
+  <div class="head--side head--side--main">Newsico</div>
+  <div class="side-nav__category-block">
+    <div class="head--side head--side--category">Main Page</div>
+  </div>
+  <div class="side-nav__category-block">
+    <div class="head--side head--side--category">Interviews</div>
+    <div id="tech-interviews" class="head--side head--side--sub">Tech</div>
+    <div id="tech-interviews-content" class="side-nav__category-bubble">
+      <ul class="side-nav__list">
+        <div class="head--side--list">Interviews</div>
+        <li class="side-nav__list-item text--list">Interview #1</li>
+        <li class="side-nav__list-item text--list">Interview #2</li>
+        <li class="side-nav__list-item text--list">Interview #3</li>
+        <li class="side-nav__list-item text--list">Interview #4</li>
+      </ul>
+    </div>
+  </div>
+  <div class="side-nav__category-block">
+    <div class="head--side head--side--category">Resources</div>
+    <div id="dev-resources" class="head--side head--side--sub">
+      Developer Resources
+    </div>
+    <div id="dev-resources-content" class="side-nav__category-bubble">
+      <ul class="side-nav__list">
+        <div class="head--side--list">Dev Resources</div>
+        <li class="side-nav__list-item text--list">List #1</li>
+        <li class="side-nav__list-item text--list">List #2</li>
+        <li class="side-nav__list-item text--list">List #3</li>
+        <li class="side-nav__list-item text--list">List #4</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="overlay pointer-events--none" id="menuOverlay"></div>
+
     <!-- TOP NAV -->
     <nav class="top-nav">
   <div class="top-nav__logo">
-    <img src="/img/logo-black.png" alt="" class="logo logo--main" />
+    <a href="https://newsico.co">
+      <img src="/img/logo-black.png" alt="" class="logo logo--main" />
+    </a>
   </div>
   <div class="top-nav__inner">
     <div class="top-nav__left">
-      <div class="top-nav__menu">
+      <div id="menu" class="top-nav__menu">
         <img src="/img/hamburger.png" alt="" class="icon--menu" />
       </div>
       <div class="u--display--desktop top-nav__search">
         <img src="/img/search-dark.png" alt="" class="icon--menu" />
       </div>
-      <div class="u--display--desktop top-nav__headline">
-        Top Tech Headlines
-      </div>
+      <div class="u--display--desktop top-nav__headline">Tech Interviews</div>
     </div>
     <div class="top-nav__right">
       <div class="top-nav__btn text--white">
-        <a href="#" class="btn btn--green">Subscribe</a>
+        <a href="https://newsico.co/subscribe.html" class="btn btn--green">
+          Subscribe
+        </a>
       </div>
     </div>
   </div>
@@ -135,7 +172,9 @@
         <h4 class="small-article__header head--small">
           Interview with a Software Engineer #4
         </h4>
-        <v class="small-article__author text--author--small">Robert Klasen</v>
+        <div class="small-article__author text--author--small">
+          Robert Klasen
+        </div>
       </a>
     </div>
     <div class="small-article__image-container">
@@ -154,7 +193,7 @@
     <div class="main-article__image-container">
       <img src="/test_images/17.jpg" alt="" class="image--main" />
       <div class="main-article__image-line"></div>
-      <v class="main-article__org text--org--main">Newsico</v>
+      <div class="main-article__org text--org--main">Newsico</div>
     </div>
     <a href="https://klasen-development.com" target="_blank">
       <h1 class="main-article__header text--center head--main">

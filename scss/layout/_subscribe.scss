@@ -1,0 +1,13 @@
+.subscribe {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__message {
+    padding-bottom: 2rem;
+    @include respond(break-600) {
+      width: 75%;
+    }
+  }
+}
