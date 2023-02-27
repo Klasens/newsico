@@ -695,8 +695,16 @@ a {
   background-color: #f7f7f7;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); }
+  @media (max-width: 37.5em) {
+    .side-nav {
+      width: 100%; } }
   .side-nav > .head--side--main {
     padding: 1rem 0; }
+  .side-nav__close {
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem; }
   .side-nav__category-bubble {
     opacity: 0;
     border-radius: 10px;
@@ -708,6 +716,9 @@ a {
     transform: translateX(95%);
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); }
+    @media (max-width: 37.5em) {
+      .side-nav__category-bubble {
+        height: max-content; } }
   .side-nav__list {
     padding: 1rem;
     list-style: none; }
@@ -726,6 +737,18 @@ a {
         right: 0;
         top: 50%;
         transform: translateY(-50%); }
+
+@media (max-width: 37.5em) {
+  #tech-interviews-content {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 115%); } }
+
+@media (max-width: 37.5em) {
+  #dev-resources-content {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%); } }
 
 /**=======================================================================================================================
  **                                                   CONSTRUCTION 

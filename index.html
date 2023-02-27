@@ -41,7 +41,10 @@
 
   <body class="layout-base display-base body main-font text--black">
     <!-- Block Content -->
-     <div id="sideMenu" class="side-nav">
+     <div id="sideMenu" class="side-nav pointer-events--none">
+  <div id="menuClose" class="side-nav__close u--display--mobile">
+    <img src="/img/x.png" alt="" />
+  </div>
   <div class="head--side head--side--main">Newsico</div>
   <div class="side-nav__category-block">
     <div class="head--side head--side--category">Main Page</div>
@@ -49,7 +52,10 @@
   <div class="side-nav__category-block">
     <div class="head--side head--side--category">Interviews</div>
     <div id="tech-interviews" class="head--side head--side--sub">Tech</div>
-    <div id="tech-interviews-content" class="side-nav__category-bubble">
+    <div
+      id="tech-interviews-content"
+      class="side-nav__category-bubble pointer-events--none"
+    >
       <ul class="side-nav__list">
         <div class="head--side--list">Interviews</div>
         <li class="side-nav__list-item text--list">Interview #1</li>
@@ -64,7 +70,10 @@
     <div id="dev-resources" class="head--side head--side--sub">
       Developer Resources
     </div>
-    <div id="dev-resources-content" class="side-nav__category-bubble">
+    <div
+      id="dev-resources-content"
+      class="side-nav__category-bubble pointer-events--none"
+    >
       <ul class="side-nav__list">
         <div class="head--side--list">Dev Resources</div>
         <li class="side-nav__list-item text--list">List #1</li>

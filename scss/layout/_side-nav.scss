@@ -9,9 +9,19 @@
   background-color: $color-white;
   border-right: 1px solid $color-black-opaque;
   box-shadow: 5px 5px 10px $color-black-opaque;
+  @include respond(break-600) {
+    width: 100%;
+  }
 
   & > .head--side--main {
     padding: 1rem 0;
+  }
+
+  &__close {
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
   }
 
   &__category-bubble {
@@ -25,6 +35,9 @@
     transform: translateX(95%);
     border: 1px solid $color-black-opaque;
     box-shadow: 5px 5px 10px $color-black-opaque;
+    @include respond(break-600) {
+      height: max-content;
+    }
   }
   &__list {
     padding: 1rem;
@@ -48,5 +61,20 @@
         transform: translateY(-50%);
       }
     }
+  }
+}
+
+#tech-interviews-content {
+  @include respond(break-600) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 115%);
+  }
+}
+#dev-resources-content {
+  @include respond(break-600) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
   }
 }
