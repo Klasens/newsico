@@ -15,6 +15,12 @@
       font-size: 1.8rem;
     }
   }
+  &--content {
+    font-size: 2.4rem;
+    @include respond(break-1550) {
+      font-size: 1.8rem;
+    }
+  }
   &--ext {
     font-size: 1.6rem;
     @include respond(break-1550) {
@@ -116,4 +122,42 @@
 
 .text--subscribe {
   font-size: 1.4rem;
+}
+
+.text--category {
+  color: $color-primary;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.text--description--content {
+  font-size: 1.3rem;
+}
+.text--author--content {
+  font-size: 1.3rem;
+}
+
+.text--article--date {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.text--article {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.text--image--article {
+  color: $color-grey;
+  font-size: 0.8rem;
+}
+
+.text--category--description {
+  font-style: italic;
+  line-height: 1.6;
+}
+.text--socials {
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
 }

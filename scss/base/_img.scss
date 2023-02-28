@@ -8,6 +8,13 @@
 }
 
 .image {
+  &--socials {
+    width: 100%;
+  }
+  &--content {
+    width: 100%;
+  }
+
   &--small {
     height: 5rem;
     width: 10rem;
