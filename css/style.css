@@ -810,10 +810,16 @@ a {
     display: flex;
     flex-direction: column;
     max-width: 40rem; }
+    @media (max-width: 37.5em) {
+      .content__article-text {
+        width: 90%; } }
     .content__article-text > * {
       margin: 1rem 0; }
   .content__article-data {
     max-width: 40rem; }
+    @media (max-width: 37.5em) {
+      .content__article-data {
+        width: 90%; } }
     .content__article-data > * {
       margin: 1rem 0; }
   .content__separator-block {

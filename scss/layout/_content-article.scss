@@ -16,12 +16,19 @@
     display: flex;
     flex-direction: column;
     max-width: 40rem;
+
+    @include respond(break-600) {
+      width: 90%;
+    }
     & > * {
       margin: 1rem 0;
     }
   }
   &__article-data {
     max-width: 40rem;
+    @include respond(break-600) {
+      width: 90%;
+    }
     & > * {
       margin: 1rem 0;
     }
