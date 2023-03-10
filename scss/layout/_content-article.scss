@@ -56,4 +56,8 @@
       margin-right: 0.5rem;
     }
   }
+  &__quote {
+    border-left: 2px solid $color-black-opaque;
+    padding-left: 1rem;
+  }
 }
