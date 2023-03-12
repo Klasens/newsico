@@ -27,12 +27,12 @@ gulp.task('nunjucks-index', function () {
       .pipe(gulp.dest('./'))
   );
 });
-// ==== Build Subscribe ==== //
+// ==== Build Subscribe & Contact ==== //
 gulp.task('nunjucks-subscribe', function () {
   return (
     gulp
       // -- Collect Index
-      .src('pages/subscribe.html')
+      .src(['pages/subscribe.html', 'pages/contact.html'])
       // -- Compile partials from partials
       .pipe(
         nunjucksRender({
@@ -57,6 +57,22 @@ gulp.task('nunjucks-articles', function () {
       )
       // -- Output files to chapters folder
       .pipe(gulp.dest('./articles'))
+  );
+});
+// ==== Build Sub Pages ==== //
+gulp.task('nunjucks-sub', function () {
+  return (
+    gulp
+      // -- Collect Sub Pages
+      .src('pages/sub/*.html')
+      // -- Compile partials from partials
+      .pipe(
+        nunjucksRender({
+          path: ['partials'],
+        })
+      )
+      // -- Output files to chapters folder
+      .pipe(gulp.dest('./sub'))
   );
 });
 

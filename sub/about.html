@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Newsico -- A New Take on News</title>
+    <title>Newsico -- Sub</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -32,9 +32,9 @@
       rel="stylesheet"
     />
     <!--====== STYLE SHEETS ======-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <!--====== Browswer Icon ======-->
+    <!--====== Browser Icon ======-->
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -49,8 +49,9 @@
   <body class="layout-base display-base body main-font text--black">
     <!-- Block Content -->
     
-    <!-- SIDE NAV -->
-    <div id="sideMenu" class="side-nav pointer-events--none">
+
+<!-- TOP NAV -->
+<div id="sideMenu" class="side-nav pointer-events--none">
   <div id="menuClose" class="side-nav__close u--display--mobile">
     <img src="/img/x.png" alt="" />
   </div>
@@ -97,8 +98,9 @@
 </div>
 <div class="overlay pointer-events--none" id="menuOverlay"></div>
 
-    <!-- TOP NAV -->
-    <nav class="top-nav">
+
+<!-- TOP NAV -->
+<nav class="top-nav">
   <div class="top-nav__logo">
     <a href="https://newsico.co">
       <img src="/img/logo-black.png" alt="" class="logo logo--main" />
@@ -124,43 +126,46 @@
   </div>
 </nav>
 
-    <!-- TOP NAV -->
-    <section class="subscribe">
-  <div class="subscribe__message">
-    <p class="text--subscribe">
-      This site isn't live yet, but enter your name and email and I'll update
-      you when it launches
+
+<!-- Article Content -->
+<h1 class="title">Newsico About Us</h1>
+<div class="sub">
+  <div class="sub__block">
+    <p class="paragraph">
+      Welcome to Newsico, a digital publication that focuses on giving a voice
+      to individuals affected by major events. Our unique approach to reporting
+      centers around conducting in-depth interviews with individuals impacted by
+      changes in their industry to provide them with a platform to share their
+      experiences, insights, and stories. We believe that the voices of those
+      most affected by job loss, reorganization, or other major events need to
+      be heard, and our mission is to ensure that their stories are told.
+    </p>
+    <p class="paragraph">
+      At Newsico, we understand that major events can be difficult and isolating
+      experiences, which is why we provide a platform for those affected to
+      share their stories with others. Our team of experienced journalists
+      conducts interviews with individuals, providing them with a space to
+      reflect on their experiences, share their challenges, and offer insights
+      into their industry's changing landscape. We are committed to ensuring
+      that the voices of those impacted by major events are heard and that their
+      stories are used to inform important conversations about the future of
+      work.
+    </p>
+    <p class="paragraph">
+      Whether you are a worker affected by job loss, a policymaker, or simply
+      someone interested in industry changes, Newsico provides a unique
+      perspective that you won't find anywhere else. Our interviews offer
+      insights into the human impact of major events, and our reporting provides
+      a valuable counterpoint to the often-dry statistics and data that dominate
+      news coverage. Join us on our mission to give a voice to those impacted by
+      major events, and to provide meaningful insights into the future of work.
     </p>
   </div>
-  <form
-    action="https://formsubmit.co/5e9d0a9cf5fe4f67d6ec7177a8ad828f"
-    method="POST"
-    class="form"
-  >
-    <div class="form__block">
-      <label for="fullName" class="form__label">Name</label>
-      <input
-        type="text"
-        class="form__input form__input--standard"
-        name="fullName"
-      />
-    </div>
-    <div class="form__block">
-      <label for="email" class="form__label">Email</label>
-      <input
-        type="text"
-        class="form__input form__input--standard"
-        name="email"
-      />
-    </div>
-    <div class="form__block form__submit">
-      <button class="btn btn--transparent text--btn">Submit</button>
-    </div>
-  </form>
-</section>
+</div>
 
-    <!-- FOOTER -->
-    <footer class="footer text--white">
+
+<!-- FOOTER -->
+<footer class="footer text--white">
   <div class="footer__inner">
     <div class="footer__left">
       <div class="footer__block">
@@ -205,8 +210,9 @@
   </div>
 </footer>
 
-    <!-- Endblock -->
-    
+
+<!-- Endblock -->
+
     <!------- JAVASCRIPT ------->
     <script src="/index.js"></script>
   </body>

@@ -1,0 +1,39 @@
+/**=======================================================================================================================
+ **                                                   SUB 
+ *=======================================================================================================================**/
+
+.sub {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sub--paragraph {
+  width: 50rem;
+  margin: 0 auto;
+  // align-items: center;
+}
+.sub__block {
+  width: 50rem;
+  margin: 0 auto;
+}
+/* Style for the title class */
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Style for the section class */
+.section {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Style for the paragraph class */
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

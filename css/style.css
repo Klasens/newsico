@@ -841,32 +841,47 @@ a {
       margin-right: 0.5rem; }
 
 /**=======================================================================================================================
- **                                                   CONSTRUCTION 
+ **                                                   SUB 
  *=======================================================================================================================**/
-.display-construciton {
-  height: 25rem;
-  width: 45rem;
-  border-radius: 15px;
-  border: 2px solid #f7f7f7;
-  background-color: #149691; }
+.sub {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
-.construction__header {
-  font-size: 4rem; }
+.sub--paragraph {
+  width: 50rem;
+  margin: 0 auto; }
 
-.construction__img {
-  height: 4rem;
-  width: 4rem; }
+.sub__block {
+  width: 50rem;
+  margin: 0 auto; }
 
-.construction__text {
-  font-size: 1.5rem; }
+/* Style for the title class */
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px; }
 
-.construction__link {
+/* Style for the section class */
+.section {
+  text-align: center;
   font-size: 1.5rem;
-  color: #0077ff; }
+  margin-top: 20px; }
+
+/* Style for the paragraph class */
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 20px; }
 
 /**=======================================================================================================================
  **                                                   UTILITIES 
  *=======================================================================================================================**/
+.u--width--sub {
+  width: 50rem;
+  margin: 0 auto; }
+
 .u--position-absolute--top-center {
   position: absolute;
   top: -1rem;
