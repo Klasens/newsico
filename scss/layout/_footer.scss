@@ -51,6 +51,12 @@
     & > * {
       margin-top: 0.5rem;
     }
+    & > a > .icon--footer {
+      margin: 0 auto;
+    }
+    & > a:hover {
+      text-decoration: underline;
+    }
   }
   &__right {
     width: 50%;

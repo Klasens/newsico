@@ -708,6 +708,10 @@ a {
     flex-direction: column; }
     .footer__block > * {
       margin-top: 0.5rem; }
+    .footer__block > a > .icon--footer {
+      margin: 0 auto; }
+    .footer__block > a:hover {
+      text-decoration: underline; }
   .footer__right {
     width: 50%;
     display: flex;
@@ -727,7 +731,8 @@ a {
   align-items: center;
   flex-direction: column; }
   .subscribe__message {
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    width: 50rem; }
     @media (max-width: 37.5em) {
       .subscribe__message {
         width: 75%; } }

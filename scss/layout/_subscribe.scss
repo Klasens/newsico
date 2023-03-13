@@ -6,6 +6,7 @@
 
   &__message {
     padding-bottom: 2rem;
+    width: 50rem;
     @include respond(break-600) {
       width: 75%;
     }

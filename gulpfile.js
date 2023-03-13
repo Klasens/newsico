@@ -1,3 +1,5 @@
+// gulp nunjucks-index nunjucks-subscribe nunjucks-articles nunjucks-sub
+
 'Use strict';
 // ==== Requirements ==== //
 const gulp = require('gulp');
